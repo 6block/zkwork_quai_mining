@@ -10,7 +10,7 @@
 
 ## quai_gpu_miner
 
-- Version: [v0.4.1+](https://github.com/dominant-strategies/quai-gpu-miner/releases)
+- Version: [v0.5.0+](https://github.com/dominant-strategies/quai-gpu-miner/releases)
 
 **On Ubuntu**
 
@@ -29,8 +29,8 @@
 **On HiveOS**
 
 1. Choose your download url for your gpu.
-  * DOWNLOAD_URL for Nvidia: https://github.com/dominant-strategies/quai-gpu-miner/releases/download/v0.4.1/quai-gpu-miner-nvidia-v0.4.1.tar.gz
-  * DOWNLOAD_URL for AMD: https://github.com/dominant-strategies/quai-gpu-miner/releases/download/v0.4.1/quai-gpu-miner-amd-v0.4.1.tar.gz
+  * DOWNLOAD_URL for Nvidia: https://github.com/dominant-strategies/quai-gpu-miner/releases/download/v0.5.0/quai-gpu-miner-nvidia-v0.5.0.tar.gz
+  * DOWNLOAD_URL for AMD: https://github.com/dominant-strategies/quai-gpu-miner/releases/download/v0.5.0/quai-gpu-miner-amd-v0.5.0.tar.gz
 2. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
 3. Add New Flight Sheet with config as follows.
 
@@ -44,7 +44,7 @@ Configuration:
 
 ### SRBMiner
 
-- Version: [v2.7.5+](https://github.com/doktor83/SRBMiner-Multi/releases)
+- Version: [v2.7.6+](https://github.com/doktor83/SRBMiner-Multi/releases)
 
 **On Ubuntu**
 
@@ -71,7 +71,7 @@ Configuration:
 **On HiveOS**
 
 1. Choose your download url for your gpu.
-  * DOWNLOAD_URL: https://github.com/doktor83/SRBMiner-Multi/releases/download/2.7.5/srbminer_custom-2.7.5.tar.gz
+  * DOWNLOAD_URL: https://github.com/doktor83/SRBMiner-Multi/releases/download/2.7.6/srbminer_custom-2.7.6.tar.gz
 
 2. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
 3. Add New Flight Sheet with config as follows.
