@@ -38,13 +38,16 @@
 2. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
 3. Add New Flight Sheet with config as follows:
 
+<img src="pics/quai_1.png" alt="QuaiMiner settings" style="width:800px;"/>
+<img src="pics/quai_2.png" alt="QuaiMiner settings" style="width:500px;"/>
+
 Configuration:
 - Installation URL: `DOWNLOAD_URL`
 - Hash algorithm: `progpow`
 - Wallet and worker template: `%WAL%`
-- Extra config arguments: `-U --HWMON 1 -P stratum://%WAL%.%WORKER_NAME%:x@quai.asia.zk.work:13333`
+- Extra config arguments: `-U --HWMON 1 -P stratum://%WAL%.%WORKER_NAME%@quai.asia.zk.work:13333`
 
-4 Start Flight Sheet
+4. Start Flight Sheet
 
 ### SRBMiner
 
