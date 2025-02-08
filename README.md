@@ -1,5 +1,7 @@
 # ZKWROK_QUAI_MINING
- * pool_address=quai.asia.zk.work:13333
+ ## Pool stratum servers:
+ * quai.asia.zk.work:13333
+ * quai.eu.zk.work:13333
 
 ## Mining Tutorial
 **Supported Miners**
