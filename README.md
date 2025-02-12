@@ -49,6 +49,26 @@ Configuration:
 
 4. Start Flight Sheet
 
+**On Mmpos**
+
+1. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
+2. Import miner profiles from a JSON file using a JSON string format. (`Miner profiles` - `Import from JSON` - `JSON String`)
+* JSON String for Nvidia
+    ```
+    {"miner_profile":{"name":"Zkwork-QUAI","coin":"QUAI","os":"linux","commandline":"-U -P %pool_protocol%%user%@%pool_server%:%pool_port% --api-bind 127.0.0.1:%api_port%","miner":"quai-gpu-miner-nvidia.default","miner_version":"latest","api_port":3333,"platforms":[]},"pools":[{"url":"quai.asia.zk.work","port":"13333","username":"%wallet_address%.%rig_name%%miner_id%","password":"x","name":"Zk.Work - QUAI","coin":"QUAI","ssl":false}]}
+    ```
+* JSON String for AMD
+    ```
+    {"miner_profile":{"name":"Zkwork-Quai-AMD","coin":"QUAI","os":"linux","commandline":"-G -P %pool_protocol%%user%@%pool_server%:%pool_port% --api-bind 127.0.0.1:%api_port%","miner":"quai-gpu-miner-amd.default","miner_version":"latest","api_port":3333,"platforms":[]},"pools":[{"url":"quai.asia.zk.work","port":"13333","username":"%wallet_address%.%rig_name%%miner_id%","password":"x","name":"Zk.Work - QUAI","coin":"QUAI","ssl":false}]}
+    ```
+    <img src="pics/quai_mmpos.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+3. If no pools are defined for this coin type, add a pool by creating one (`Add pool` - `Create pool`). Then, add a miner profile by creating a new profile (`Add miner profile` - `Create profile`). 
+
+    <img src="pics/mmpos_pool.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+4. Switch miner profile.
+
 ### SRBMiner
 
 - Version: [v2.7.6+](https://github.com/doktor83/SRBMiner-Multi/releases)
@@ -91,6 +111,22 @@ Configuration:
 - Pool server:port: `quai.asia.zk.work:13333`
 
 4. Start Flight Sheet
+
+**On Mmpos**
+
+1. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
+2. Import miner profiles from a JSON file using a JSON string format. (`Miner profiles` - `Import from JSON` - `JSON String`)
+    ```
+    {"miner_profile":{"name":"Zk.Work-SRBMiner-QUAI","coin":"QUAI","os":"linux","commandline":"--algorithm progpow_quai --disable-cpu --pool %pool_protocol%%pool_server%:%pool_port% --wallet %user% --password %password% --log-file /dev/null --api-enable --api-port %api_port%", "miner":"sbrminer.quai","miner_version":"latest","api_port":4056,"platforms":[]},"pools":[{"url":"quai.asia.zk.work","port":"13333","username":"%wallet_address%.%rig_name%%miner_id%","password":"x","name":"Zk.Work - QUAI","coin":"QUAI","ssl":false}]}
+    ```
+    <img src="pics/srb_mmpos.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+3. If no pools are defined for this coin type, add a pool by creating one (`Add pool` - `Create pool`). Then, add a miner profile by creating a new profile (`Add miner profile` - `Create profile`). 
+
+    <img src="pics/mmpos_pool.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+4. Switch miner profile.
+
 
 ### WildRig
 
@@ -135,6 +171,22 @@ Configuration:
 
 4. Start Flight Sheet
 
+**On Mmpos**
+
+1. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
+2. Import miner profiles from a JSON file using a JSON string format. (`Miner profiles` - `Import from JSON` - `JSON String`)
+    ```
+    {"miner_profile":{"name":"WildRig-zkwrok-QUAI","coin":"QUAI","os":"linux","commandline":"-a progpow-quai -o %pool_protocol%%pool_server%:%pool_port% -u %user% -p %password% --api-port=%api_port%","miner":"wildrig-multi.quai","miner_version":"latest","api_port":4028,"platforms":[]},"pools":[{"url":"quai.asia.zk.work","port":"13333","username":"%wallet_address%.%rig_name%%miner_id%","password":"x","name":"Zk.Work - QUAI","coin":"QUAI","ssl":false}]}
+    ```
+    <img src="pics/wildrig_mmpos.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+3. If no pools are defined for this coin type, add a pool by creating one (`Add pool` - `Create pool`). Then, add a miner profile by creating a new profile (`Add miner profile` - `Create profile`). 
+
+    <img src="pics/mmpos_pool.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+4. Switch miner profile.
+
+
 ### Rigel
 
 - Version: [v1.20.0+](https://github.com/rigelminer/rigel/releases)
@@ -178,3 +230,19 @@ Configuration:
 - Pool URL: `quai.asia.zk.work:13333`
 
 4. Start Flight Sheet
+
+**On Mmpos**
+
+1. Get a ZKWORK_API_TOKEN on [ZK.WROK](https://v2.zk.work/) as QUAI wallet address.
+2. Import miner profiles from a JSON file using a JSON string format. (`Miner profiles` - `Import from JSON` - `JSON String`)
+    ```
+    {"miner_profile":{"name":"rigel-zk.work-QUAI","coin":"QUAI","os":"linux","commandline":"-a quai --no-tui -o %pool_protocol%%pool_server%:%pool_port% -u %wallet_address% -w %rig_name%%miner_id% --api-bind 127.0.0.1:%api_port% --no-strict-ssl", "miner":"rigel.quai","miner_version":"latest","api_port":7500,"platforms":[]},"pools":[{"url":"quai.asia.zk.work","port":"13333","username":"%wallet_address%.%rig_name%%miner_id%","password":"x","name":"Zk.Work - QUAI","coin":"QUAI","ssl":false}]}
+    ```
+    <img src="pics/rigle_mmpos.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+3. If no pools are defined for this coin type, add a pool by creating one (`Add pool` - `Create pool`). Then, add a miner profile by creating a new profile (`Add miner profile` - `Create profile`). 
+
+    <img src="pics/mmpos_pool.png" alt="QuaiMiner settings" style="width:300px;"/>
+
+4. Switch miner profile.
+
